@@ -1,0 +1,114 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.booking-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.weekday {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.day {
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.day:hover {
+    background-color: #E0E0E0;
+}
+
+.day--selected {
+    background-color: #C69C3A;
+    color: #fff;
+    font-weight: bold;
+}
+
+.day--disabled {
+    background-color: transparent;
+    color: #B0B0B0;
+    cursor: default;
+}
+
+.time-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.time-slot {
+    background-color: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.time-slot:hover {
+    border-color: #C69C3A;
+    color: #C69C3A;
+}
+
+.time-slot--selected {
+    background-color: #C69C3A;
+    border-color: #C69C3A;
+    color: #fff;
+}
+
+.loading-message {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+.error-message {
+    text-align: center;
+    color: #d9534f;
+    padding: 20px;
+}
+
+.bottom-bar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    color: #C69C3A;
+    font-weight: bold;
+}
